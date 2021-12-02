@@ -30,3 +30,16 @@ a.foot-link.active {
 .foot-nav {
     text-align: left;
 }
+
+.footer-logo {
+    height: 50px;
+    margin-right: 5%;
+}
+
+.grey-text {
+    color: rgba(255, 255, 255, .55);
+}
+
+.grey-text strong {
+    color: #fff;
+}

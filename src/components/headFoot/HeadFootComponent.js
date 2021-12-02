@@ -46,12 +46,12 @@ export function Header() {
 }
 
 export function Footer(props) {
+    let year = new Date().getFullYear();
 	return (
-		<div className="container-fluid bg-dark text-light footer-content" style={{ width: '100%' }}>
+		<div className="container-fluid bg-dark grey-text footer-content">
 			<div className="row align-items-center">
-				<div className="col-sm-3 offset-sm-2 col-3 foot-col foot-nav">
-					<h5>Links</h5>
-					<Nav navbar navbar-dark vertical className="">
+				<div className="col-3 offset-md-2 offset-sm-1 foot-col foot-nav">
+					<Nav vertical>
 						<NavItem>
 							<NavLink className="foot-link" to="/">
 								home
@@ -77,14 +77,14 @@ export function Footer(props) {
 						</NavLink>
 					</Nav>
 				</div>
-				<div className="col-sm-6 col-8 text-center foot-col">
+				<div className="col-sm-7 col-md-6 col-9 text-center foot-col pt-3">
 					<p>
 						<strong>scottalan.dev</strong> is the personal portfolio of full-stack web developer Scott Alan.
 					</p>
 					<hr style={{ borderTop: '3px solid white' }} />
-					<div href="http://scottalan.dev/" target="_blank" rel="noreferrer">
-						<img src="img/SADLogoLt2LgTrans.png" alt="Scott Alan Dev logo" height="50px" style={{ marginRight: '5%' }} />
-						&copy; 2021 Scott Alan
+					<div>
+						<img src="img/SADLogoLt2LgTrans.png" alt="Scott Alan Dev logo" className="footer-logo" />
+						&copy; {year} Scott Alan
 					</div>
 				</div>
 			</div>

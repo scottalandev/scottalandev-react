@@ -1,10 +1,27 @@
 :root {
     --header-height: 106px;
-    --footer-height: 172px;
+    --footer-height-1: 145px;
+    --footer-height-2: 169px;
+    --footer-height-3: 193px;
 }
 
-main {
-    min-height: calc(100vh - var(--header-height) - var(--footer-height));
+
+@media screen and (max-width: 395px) {
+    main {
+        min-height: calc(100vh - var(--header-height) - var(--footer-height-3));
+    }
+}
+
+@media screen and (min-width: 396px) and (max-width: 1144px) {
+    main {
+        min-height: calc(100vh - var(--header-height) - var(--footer-height-2));
+    }
+}
+
+@media screen and (min-width: 1145px) {
+    main {
+        min-height: calc(100vh - var(--header-height) - var(--footer-height-1));
+    }
 }
 
 footer {
