@@ -9,31 +9,30 @@ import ContactPage from './pages/ContactPage';
 import './main.css';
 
 function Main() {
-
-    //this block effects a Scroll-To-Top on navigation
-    const location = useLocation();
+	//this block effects a Scroll-To-Top on navigation
+	const location = useLocation();
 	useLayoutEffect(() => {
 		window.scrollTo(0, 0);
 	}, [location]);
 
-    return (
+	return (
 		<>
-			<div className="header-container">
+			<header>
 				<Header />
-			</div>
-			<div className="content-container">
+			</header>
+			<main>
 				<Routes>
-					<Route path="/home" element={<HomePage />} />
+					<Route path="/" element={<HomePage />} />
 					<Route path="/projects" element={<ProjectsPage />} />
 					<Route path="/tech" element={<TechPage />} />
 					<Route path="/me" element={<MePage />} />
 					<Route path="/contact" element={<ContactPage />} />
 					<Route path="*" element={<HomePage />} />
 				</Routes>
-			</div>
-			<div className="footer-container">
+			</main>
+			<footer>
 				<Footer />
-			</div>
+			</footer>
 		</>
 	);
 }

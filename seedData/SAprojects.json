@@ -1,0 +1,9 @@
+[
+    {
+        "name": "Calapooia River SPA",
+        "status": "deployed",
+        "url": "calapooiariver.com",
+        "techStack": "MERN",
+        "deployment": "Netlify (React Front-End)/Heroku (Express/MongoDB Back-End)"
+    }
+]

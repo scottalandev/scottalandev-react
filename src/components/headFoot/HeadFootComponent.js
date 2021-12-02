@@ -8,14 +8,16 @@ export function Header() {
 
 	return (
 		<Navbar dark className="bg-dark dark" sticky="top" expand="md">
-			<NavbarBrand className="mr-auto" href="/">
+			<NavbarBrand className="mr-auto col-sm-3" href="/">
 				<img src="img/SAFavicon80px.png" alt="logo" />
 			</NavbarBrand>
 			<NavbarToggler onClick={() => toggleNav(!isNavOpen)} />
 			<Collapse isOpen={isNavOpen} navbar>
-				<Nav navbar className="ml-auto">
+				<Nav navbar navbar-dark className="offset-sm-3">
 					<NavItem>
-						<NavLink className="nav-link" to="/home" onClick={() => toggleNav(false)}>home</NavLink>
+						<NavLink className="nav-link" to="/" onClick={() => toggleNav(false)}>
+							home
+						</NavLink>
 					</NavItem>
 					<NavItem>
 						<NavLink className="nav-link" to="/projects" onClick={() => toggleNav(false)}>
@@ -45,30 +47,47 @@ export function Header() {
 
 export function Footer(props) {
 	return (
-		<footer className="site-footer">
-			<div className="container-fluid bg-dark text-light footer-content" style={{ width: '100%' }}>
-				<div className="row align-items-center">
-					<div className="col col-sm-4 offset-2 foot-col">
-						<h5>Links</h5>
-						<ul className="list-unstyled">
-							<NavItem>
-								<NavLink to="/home">Home</NavLink>
-							</NavItem>
-							<li>
-								<NavLink to="/page">Page</NavLink>
-							</li>
-						</ul>
-					</div>
-					<div className="col text-center foot-col">
-						<p>'MERN: Fully Stacked' and this website developed by:</p>
-						<a href="http://scottalan.dev/" target="_blank" rel="noreferrer">
-							<img src="img/SADLogoLt2LgTrans.png" alt="Scott Alan Dev logo" height="50px" />
-						</a>
-						<hr style={{ borderTop: '3px solid white' }} />
-						<p>&copy; 2021 Scott Alan</p>
+		<div className="container-fluid bg-dark text-light footer-content" style={{ width: '100%' }}>
+			<div className="row align-items-center">
+				<div className="col-sm-3 offset-sm-2 col-3 foot-col foot-nav">
+					<h5>Links</h5>
+					<Nav navbar navbar-dark vertical className="">
+						<NavItem>
+							<NavLink className="foot-link" to="/">
+								home
+							</NavLink>
+						</NavItem>
+						<NavItem>
+							<NavLink className="foot-link" to="/projects">
+								projects
+							</NavLink>
+						</NavItem>
+						<NavItem>
+							<NavLink className="foot-link" to="/tech">
+								tech
+							</NavLink>
+						</NavItem>
+						<NavItem>
+							<NavLink className="foot-link" to="/me">
+								me
+							</NavLink>
+						</NavItem>
+						<NavLink className="foot-link" to="/contact">
+							contact
+						</NavLink>
+					</Nav>
+				</div>
+				<div className="col-sm-6 col-8 text-center foot-col">
+					<p>
+						<strong>scottalan.dev</strong> is the personal portfolio of full-stack web developer Scott Alan.
+					</p>
+					<hr style={{ borderTop: '3px solid white' }} />
+					<div href="http://scottalan.dev/" target="_blank" rel="noreferrer">
+						<img src="img/SADLogoLt2LgTrans.png" alt="Scott Alan Dev logo" height="50px" style={{ marginRight: '5%' }} />
+						&copy; 2021 Scott Alan
 					</div>
 				</div>
 			</div>
-		</footer>
+		</div>
 	);
 }

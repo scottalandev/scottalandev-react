@@ -8,18 +8,25 @@
     width: 100%;
 }
 
+
+
 /* footer */
 
 .footer-content {
     padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-/* a {
+a.foot-link {
+    color: rgba(255, 255, 255, .55);
+    text-decoration: none;
+}
+
+a.foot-link.active {
     color: #fff;
     text-decoration: none;
 }
 
-a:hover {
-    color: #fff;
-    text-decoration: none;
-} */
+.foot-nav {
+    text-align: left;
+}
