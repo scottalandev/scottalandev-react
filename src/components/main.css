@@ -1,29 +1,48 @@
 :root {
-    --header-height: 106px;
-    --footer-height-1: 145px;
-    --footer-height-2: 169px;
-    --footer-height-3: 193px;
+    --header-height: 126px;
+    --footer-height-1: 165px;
+    --footer-height-2: 189px;
+    --footer-height-3: 213px;
 }
 
 
 @media screen and (max-width: 395px) {
     main {
         min-height: calc(100vh - var(--header-height) - var(--footer-height-3));
+        margin: 0 5vw 0 5vw;
     }
 }
 
 @media screen and (min-width: 396px) and (max-width: 1144px) {
     main {
         min-height: calc(100vh - var(--header-height) - var(--footer-height-2));
+        margin: 0 12vw 0 12vw;
+
     }
 }
 
 @media screen and (min-width: 1145px) {
     main {
         min-height: calc(100vh - var(--header-height) - var(--footer-height-1));
+        margin: 0 18vw 0 18vw;
     }
+}
+
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: justify;
+    max-width: 800px;
+    margin: 0 auto 0 auto;
 }
 
 footer {
     position: relative;
+    margin-top: 20px
 }
