@@ -45,12 +45,12 @@ export function Header() {
 	);
 }
 
-export function Footer(props) {
+export function Footer() {
     let year = new Date().getFullYear();
 	return (
 		<div className="container-fluid bg-dark grey-text footer-content">
 			<div className="row align-items-center">
-				<div className="col-3 offset-md-2 offset-sm-1 foot-col foot-nav">
+				<div className="col-sm-3 offset-md-2 offset-sm-1 foot-col foot-nav">
 					<Nav vertical>
 						<NavItem>
 							<NavLink className="foot-link" to="/">

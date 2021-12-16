@@ -18,7 +18,7 @@
 }
 
 a.foot-link {
-    color: rgba(255, 255, 255, .55);
+    color: #fff8;
     text-decoration: none;
 }
 
@@ -37,7 +37,7 @@ a.foot-link.active {
 }
 
 .grey-text {
-    color: rgba(255, 255, 255, .55);
+    color: #fff8;
 }
 
 .grey-text strong {
