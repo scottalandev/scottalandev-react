@@ -13,7 +13,7 @@ export function Header() {
 			</NavbarBrand>
 			<NavbarToggler onClick={() => toggleNav(!isNavOpen)} />
 			<Collapse isOpen={isNavOpen} navbar>
-				<Nav navbar navbar-dark className="offset-sm-3">
+				<Nav navbar className="offset-sm-3">
 					<NavItem>
 						<NavLink className="nav-link" to="/" onClick={() => toggleNav(false)}>
 							home
@@ -83,7 +83,7 @@ export function Footer() {
 					</p>
 					<hr style={{ borderTop: '3px solid white' }} />
 					<div>
-						<img src="img/SADLogoLt2LgTrans.png" alt="Scott Alan Dev logo" className="footer-logo" />
+						<img src="img/SAFavicon80px.png" alt="Scott Alan Dev logo" className="footer-logo" />
 						&copy; {year} Scott Alan
 					</div>
 				</div>
