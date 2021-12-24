@@ -8,6 +8,7 @@ function TechPage() {
 		<>
 			<div>
 				<PageHead title={techHead.title} text={techHead.text} />
+
 				<SectionHead title="Deployed" text="Technologies used in currently-deployed projects." />
 				{tech.map((item) =>
 					item.type === 'deployed' ? (
@@ -17,6 +18,7 @@ function TechPage() {
 					) : null
 				)}
 				<hr />
+
 				<SectionHead title="Obtained Learning" text="Technologies learned but not used in current projects." />
 				{tech.map((item) =>
 					item.type === 'obtained' ? (
@@ -26,6 +28,7 @@ function TechPage() {
 					) : null
 				)}
 				<hr />
+
 				<SectionHead title="Planned Learning" text="Technologies identified for future professional development." />
 				{tech.map((item) =>
 					item.type === 'planned' ? (

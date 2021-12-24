@@ -46,7 +46,7 @@ export function Header() {
 }
 
 export function Footer() {
-    let year = new Date().getFullYear();
+	let year = new Date().getFullYear();
 	return (
 		<div className="container-fluid bg-dark grey-text footer-content">
 			<div className="row align-items-center">
@@ -77,14 +77,26 @@ export function Footer() {
 						</NavLink>
 					</Nav>
 				</div>
-				<div className="col-sm-7 col-md-6 col-9 text-center foot-col pt-3">
-					<p>
+				<div className="col-sm-8 col-md-7 text-center foot-col pt-3">
+					<p className="footer-desc">
 						<strong>scottalan.dev</strong> is the personal portfolio of full-stack web developer Scott Alan.
 					</p>
 					<hr style={{ borderTop: '3px solid white' }} />
-					<div>
-						<img src="img/SAFavicon80px.png" alt="Scott Alan Dev logo" className="footer-logo" />
-						&copy; {year} Scott Alan
+					<div className="row">
+						<div className="col-sm-4 offset-sm-1 social-links">
+                            <a href="https://www.linkedin.com/in/scott-alan-dev" target="_blank" rel="noreferrer">
+                                <img src="img/linkedin-logo.png" alt="linkedIn logo" className="social-logo" />
+                            </a>
+                            <a href="https://github.com/scottalandev" target="_blank" rel="noreferrer">
+                                <img src="img/github-logo.png" alt="github logo" className="social-logo" />
+                            </a>
+                        </div>
+						<div className="col-sm-2">
+							<img src="img/SAFavicon80px.png" alt="Scott Alan Dev logo" className="footer-logo" />
+						</div>
+						<div className="col-sm-5 copyright">
+							&copy; {year} Scott Alan
+						</div>
 					</div>
 				</div>
 			</div>

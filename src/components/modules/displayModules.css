@@ -1,10 +1,11 @@
 /* PageHead */
 
 .page-head {
-    margin-top: 3vh;
+    margin-top: 20px;
 }
 
 .page-head-text {
+    font-size: 1.3rem;
     margin: 2vh;
     text-align: justify;
 }
@@ -13,18 +14,19 @@
 
 .section-title {
     text-align: left;
-    margin-left: 12vw;
+    margin-top: 1rem;
+    /* margin-left: 12vw; */
 }
 
 .section-sub {
     font-size: 1.25rem;
     text-align: left;
-    margin: 0 12vw 0 12vw;
+    /* margin: 0 12vw 0 12vw; */
 }
 
-/* RenderTech */
+/* Render* */
 
-.tech-row-upper {
+.rend-row-upper {
     text-align: left;
 }
 
@@ -32,13 +34,26 @@
     margin-left: 5vw;
 }
 
-.tech-img {
-    height: 32px;
-    margin-right: 10px;
+.rend-logo {
+    height: 40px;
+    margin: 10px;
 }
 
-.tech-title {
+.rend-title {
     font-weight: bold;
     font-size: 1.15rem;
     margin-right: 15px;
+}
+
+.proj-img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.under-dev-img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    max-height: 300px;
 }

@@ -33,7 +33,7 @@ a.foot-link.active {
 
 .footer-logo {
     height: 50px;
-    margin-right: 5%;
+    margin: 0 5% 0 5%;
 }
 
 .grey-text {
@@ -42,4 +42,27 @@ a.foot-link.active {
 
 .grey-text strong {
     color: #fff;
+}
+
+.footer-desc {
+    text-align: center;
+}
+
+.copyright {
+    margin: auto 0 auto 0;
+}
+
+.social-links{
+    display: flex;
+    flex-direction: column;
+}
+
+.social-logo {
+    height: 1.5rem;
+}
+
+@media screen and (max-width: 575px) {
+    .foot-nav {
+        text-align: center;
+    }
 }
