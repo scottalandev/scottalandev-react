@@ -7,7 +7,7 @@ export function Header() {
 	const [isNavOpen, toggleNav] = useState(false);
 
 	return (
-		<Navbar dark className="bg-dark dark" expand="md">
+		<Navbar dark className="headfoot-color dark" expand="md">
 			<NavbarBrand className="mr-auto col-sm-3" href="/">
 				<img src="img/SAFavicon80px.png" alt="logo" />
 			</NavbarBrand>
@@ -48,7 +48,7 @@ export function Header() {
 export function Footer() {
 	let year = new Date().getFullYear();
 	return (
-		<div className="container-fluid bg-dark grey-text footer-content">
+		<div className="container-fluid headfoot-color grey-text footer-content">
 			<div className="row align-items-center">
 				<div className="col-sm-3 offset-md-2 offset-sm-1 foot-col foot-nav">
 					<Nav vertical>

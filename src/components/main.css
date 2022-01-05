@@ -3,6 +3,14 @@
     --footer-height-1: 165px;
     --footer-height-2: 189px;
     --footer-height-3: 213px;
+
+    --head-foot-grad-color-1: #141419f8;
+    --head-foot-grad-color-2: #141415f8;
+    --page-bg-color: #effeeff0;
+}
+
+body {
+    background-color: var(--page-bg-color);
 }
 
 

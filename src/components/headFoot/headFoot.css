@@ -1,3 +1,9 @@
+/* shared */
+
+.headfoot-color {
+    background: linear-gradient(90deg, var(--head-foot-grad-color-1), var(--head-foot-grad-color-2), var(--head-foot-grad-color-1));
+}
+
 /* header */
 
 .nav-link {
