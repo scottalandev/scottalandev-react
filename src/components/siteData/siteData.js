@@ -103,7 +103,7 @@ export const projects = [
         logo: "img/calapooia-logo.png",
         description: "An interactive informational site about Oregon's Calapooia River.",
         tech: "Built with the MERN stack.",
-        deploy: "Deployed to AWS EC2."
+        deploy: "Ubuntu/Nginx/MongoDB/Express/AWS-EC2"
     },
     {
         id: 2,
@@ -113,7 +113,8 @@ export const projects = [
         screenshot: "img/dc-screen.png",
         logo: "img/dcr-logo.png",
         description: "Homepage of Diversifed Creative, Mr. Alan's business for freelance work as a developer, writer, and musician.",
-        tech: "Built with the MERN stack."
+        tech: "Built with the MERN stack.",
+        deploy: "Ubuntu/Nginx/Express/AWS-EC2"
     },
     {
         id: 3,
@@ -124,18 +125,31 @@ export const projects = [
         logo: "img/wps-logo.png",
         description: "Homepage built for Willamette Piano Service, a small business dedicated to maintaining pianos in Western Oregon.",
         tech: "Built with the MERN stack.",
-        deploy: "Deployed"
+        deploy: "Ubuntu/Nginx/Express/AWS-EC2"
     },
     {
-        id: 201,
+        id: 202,
         name: "MERN Fully-Stacked",
         type: "development",
         url: "",
         screenshot: "",
         logo: "img/SAFavicon80px.png",
-        description: "Homepage built for Willamette Piano Service, a small business dedicated to maintaining pianos in Western Oregon.",
-        tech: "Built with the MERN stack."
+        description: "Getting the MERN stack from development to deployment is not always a clear-cut process. The project is intended to create a pre-built project architecture that transitions easily from development to deployment.",
+        tech: "Generates a full MERN project architecture in both development and deployment.",
+        deploy: "In development and to be determined."
     },
+    {
+        id: 201,
+        name: "Super Smash Bros. Ultimate: Character Creator",
+        type: "development",
+        url: "",
+        screenshot: "",
+        logo: "img/SAFavicon80px.png",
+        description: "This project was inspired by my 8-year-old son, who loves imagining adding characters to Nintendo's Super Smash Bros. Ultimate fighting game by creating exhaustively complete sets of moves and attributes. This app presents a simple web interface which prompts the user to define all of these nuanced details. Characters created can be saved, published, and shared.",
+        tech: "React/Typescript frontend. Backend TBD.",
+        deploy: "In development."
+    },
+
 ]
 
 export const about = {
