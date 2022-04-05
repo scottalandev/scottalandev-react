@@ -28,14 +28,14 @@ export function RenderTech({ item }) {
 			<div className="tech-row-lower">
 				{(item.level === 0 && <span className="tech-text">I do not yet have functional knowledge of {item.title}. </span>) ||
 					(item.level === 1 && <span className="tech-text">I do not yet have functional knowledge of {item.title}. </span>) ||
-					(item.level === 2 && <span className="tech-text">I have basic, perfunctory knowledge of {item.title}. </span>) ||
+					(item.level === 2 && <span className="tech-text">I have perfunctory knowledge of {item.title}. </span>) ||
 					(item.level === 3 && <span className="tech-text">I have good working knowledge of {item.title}. </span>) ||
 					(item.level === 4 && (
 						<span className="tech-text">I am comfortable and experienced working with {item.title} in a variety of contexts. </span>
 					)) ||
 					(item.level === 5 && <span className="tech-text col">My knowledge of and experience with {item.title} is extensive. </span>) ||
 					null}
-				{item.addText.length > 0 ? <span className="tech-text">{item.addText}.</span> : null}
+				{item.addText.length > 0 ? <span className="tech-text">{item.addText}</span> : null}
 			</div>
 		</>
 	);

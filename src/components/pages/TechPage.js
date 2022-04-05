@@ -9,7 +9,7 @@ function TechPage() {
 			<div>
 				<PageHead title={techHead.title} text={techHead.text} />
 
-				<SectionHead title="Deployed" text="Technologies used in currently-deployed projects." />
+				<SectionHead title="Deployed" text="Technologies applied in projects currently live on the web." />
 				{tech.map((item) =>
 					item.type === 'deployed' ? (
 						<div className="tech-cont" key={item.id}>
@@ -19,7 +19,7 @@ function TechPage() {
 				)}
 				<hr />
 
-				<SectionHead title="Obtained Learning" text="Technologies learned but not used in current projects." />
+				<SectionHead title="Proficiencies" text="Technologies ready for use but not deployed in currently live projects." />
 				{tech.map((item) =>
 					item.type === 'obtained' ? (
 						<div className="tech-cont" key={item.id}>
@@ -29,7 +29,7 @@ function TechPage() {
 				)}
 				<hr />
 
-				<SectionHead title="Planned Learning" text="Technologies identified for future professional development." />
+				<SectionHead title="Current Learning" text="Technologies currently being addressed in professional development." />
 				{tech.map((item) =>
 					item.type === 'planned' ? (
 						<div className="tech-cont" key={item.id}>
