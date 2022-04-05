@@ -115,6 +115,10 @@ export const projects = [
     name: "Calapooia River",
     type: "public",
     url: "https://calapooiariver.com",
+    gitHubUrl: {
+      "front": "calapooia-react",
+      "back": "calapooia-server"
+    },
     screenshot: "img/cala-screen.png",
     logo: "img/calapooia-logo.png",
     description: "An interactive informational site about Oregon's Calapooia River.",
@@ -126,6 +130,10 @@ export const projects = [
     name: "Diversified Creative",
     type: "public",
     url: "https://diversifiedcreative.com",
+    gitHubUrl: {
+      "front": "diversifiedcreative-react",
+      "back": "diversifiedcreative-server"
+    },
     screenshot: "img/dc-screen.png",
     logo: "img/dcr-logo.png",
     description: "Homepage of Diversifed Creative, Mr. Alan's business for freelance work as a developer, writer, and musician.",
@@ -137,6 +145,10 @@ export const projects = [
     name: "Willamette Piano Service",
     type: "public",
     url: "https://willamettepiano.com",
+    gitHubUrl: {
+      "front": "willamettepiano-react",
+      "back": "willamettepiano-server"
+    },
     screenshot: "img/wps-screen.png",
     logo: "img/wps-logo.png",
     description: "Homepage built for Willamette Piano Service, a small business dedicated to maintaining pianos in Western Oregon.",
