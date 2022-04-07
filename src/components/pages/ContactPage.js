@@ -63,7 +63,7 @@ function ContactForm(props) {
 						</Label>
 					</FormGroup>
 				</FormGroup>
-				<FormGroup tag="fieldset">
+				{/* <FormGroup tag="fieldset">
 					<legend>Which Service(s) Are You Inquiring About?</legend>
 					<FormGroup check>
 						<Label check>
@@ -120,7 +120,7 @@ function ContactForm(props) {
 							Other/General Inquiry
 						</Label>
 					</FormGroup>
-				</FormGroup>
+				</FormGroup> */}
 				<FormGroup floating>
 					<Input
 						id="otherInfo"
@@ -130,7 +130,7 @@ function ContactForm(props) {
                         style={{height: '200px'}}
 						onChange={(e) => setContactData({ ...contactData, otherInfo: e.target.value })}
 					/>
-					<Label for="otherInfo">Please provide as much detail as possible about your project</Label>
+					<Label for="otherInfo">Please provide as much relevant detail as possible about your inquiry.</Label>
 				</FormGroup>{' '}
 				<Button type="submit">Submit</Button>
 			</Form>
