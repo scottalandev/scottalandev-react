@@ -165,7 +165,7 @@ export const projects = [
     screenshot: "img/drumkit-screen.png",
     logo: "img/SAFavicon80px.png",
     description:
-      "I initially built this small drumset web app, which allows users to play drum sounds in the browser with mouse clicks or keystrokes on the keyboard from a tutorial included Angela Yu's 'The Complete 2022 Web Development Bootcamp' on Udemy. I later revisited the project, adding substantial functionality requiring significantly more JavaScript logic. The primary added feature is a looping bass drum beat feature. The user defines a tempo in Beats Per Minute with an input element, and can then hold spacebar to loop the bass drum sound at the chosen tempo.",
+      "I initially built this small drumset web app, which allows users to play drum sounds in the browser with mouse clicks or keystrokes, from a tutorial included Angela Yu's 'The Complete 2022 Web Development Bootcamp' on Udemy. I later revisited the project, adding substantial functionality requiring significantly more JavaScript logic. The primary added feature is a looping bass drum beat feature. The user defines a tempo in Beats Per Minute with an input element, and can then hold spacebar to loop the bass drum sound at the chosen tempo.",
     tech: "React/Typescript frontend. Backend TBD.",
     deploy: "In development.",
   },
