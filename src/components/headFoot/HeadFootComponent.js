@@ -1,10 +1,19 @@
 import React, { useState } from 'react';
 import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
+import Resume from '../modules/ResumeModal';
 import './headFoot.css';
+
 
 export function Header() {
 	const [isNavOpen, toggleNav] = useState(false);
+
+	const [isModalOpen, setModalOpen] = useState(false);
+	const toggleModal = () => {
+		setModalOpen(!isModalOpen);
+		toggleNav(false);
+	}
+
 
 	return (
 		<Navbar dark className="headfoot-color dark" expand="md">
@@ -39,8 +48,10 @@ export function Header() {
 							contact
 						</NavLink>
 					</NavItem>
+					<button className="resume" onClick={toggleModal}>Resumé</button>
 				</Nav>
 			</Collapse>
+			<Resume src="/img/sa-resume.pdf" alt="resume" isOpen={isModalOpen} closer={toggleModal} />
 		</Navbar>
 	);
 }

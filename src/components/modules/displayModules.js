@@ -44,7 +44,7 @@ export function RenderProject({ item }) {
     <>
       <div className="rend-row-upper">
         <img src={item.logo} alt={`${item.name} logo`} className="rend-logo" />
-        <span className="rend-title">{item.name}</span>
+        <span className="rend-title">{item.name}</span>{' '}
         {(item.url.length > 0 && (
           <>
             <a href={item.url} target="_blank" rel="noreferrer">

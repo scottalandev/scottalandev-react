@@ -1,74 +1,109 @@
 /* shared */
 
 .headfoot-color {
-    background: linear-gradient(90deg, var(--head-foot-grad-color-1), var(--head-foot-grad-color-2), var(--head-foot-grad-color-1));
+  background: linear-gradient(90deg, var(--head-foot-grad-color-1), var(--head-foot-grad-color-2), var(--head-foot-grad-color-1));
 }
 
 /* header */
 
 .nav-link {
-    margin: 0 5px;
+  margin: 0 5px;
 }
 
 .head-cont {
-    width: 100%;
+  width: 100%;
 }
 
-
+.resume, .modalCloser {
+  color: #fff;
+  background-color: #333;
+  border: 1px solid #555;
+  border-radius: 3px;
+  padding: 0 15px;
+}
 
 /* footer */
 
 .footer-content {
-    padding-top: 10px;
-    padding-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 a.foot-link {
-    color: #fff8;
-    text-decoration: none;
+  color: #fff8;
+  text-decoration: none;
 }
 
 a.foot-link.active {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 .foot-nav {
-    text-align: left;
+  text-align: left;
 }
 
 .footer-logo {
-    height: 50px;
-    margin: 0 5% 0 5%;
+  height: 50px;
+  margin: 0 5% 0 5%;
 }
 
 .grey-text {
-    color: #fff8;
+  color: #fff8;
 }
 
 .grey-text strong {
-    color: #fff;
+  color: #fff;
 }
 
 .footer-desc {
-    text-align: center;
+  text-align: center;
 }
 
 .copyright {
-    margin: auto 0 auto 0;
+  margin: auto 0 auto 0;
 }
 
-.social-links{
-    display: flex;
-    flex-direction: column;
+.social-links {
+  display: flex;
+  flex-direction: column;
 }
 
 .social-logo {
-    height: 1.5rem;
+  height: 1.5rem;
 }
 
 @media screen and (max-width: 575px) {
-    .foot-nav {
-        text-align: center;
-    }
+  .foot-nav {
+    text-align: center;
+  }
+}
+
+/* Modal */
+
+.modalOverlay {
+  position: absolute;
+  top: calc(var(--header-height) - 20px);
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #8888;
+}
+
+.modalContainer {
+  border: 1px solid black;
+  margin: 0 5vw;
+  height: calc(100vh - var(--header-height) + 14px);
+}
+
+.modalContent {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.modalCloser {
+  position: absolute;
+  top: -30px;
+  right: 23px;
 }

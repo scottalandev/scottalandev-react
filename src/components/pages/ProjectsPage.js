@@ -21,7 +21,7 @@ function ProjectsPage() {
           ) : null
         )}
         <hr />
-				
+
         <SectionHead title="Demos" text="Small projects demonstrating concepts or programming technique." />
         {projects.map((item) =>
           item.type === "demo" ? (

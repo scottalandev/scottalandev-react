@@ -1,6 +1,7 @@
 export const contactHead = {
   title: "Contact Scott Alan",
-  text: "Please use the form below to reach me, or send a direct email to scottalandev@gmail.com. I look forward to discussing your inquiry.",
+  // text: "Please use the form below to reach me, or send a direct email to scottalandev@gmail.com. I look forward to discussing your inquiry.",
+  text: "Please email me directly at scottalandev@gmail.com to get in touch. I look forward to hearing from you."
 };
 
 export const techHead = {
